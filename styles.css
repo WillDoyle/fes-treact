@@ -1112,6 +1112,16 @@ a {
   filter: invert(1);
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 800ms ease-in-out;
+}
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 @media screen and (max-width: 992px) {
   .text--black {
     color: black;
